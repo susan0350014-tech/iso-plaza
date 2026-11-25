@@ -1,0 +1,5 @@
+{
+  "name": "iso-plaza",
+  "owner": { "name": "susan0350014-tech" },
+  "plugins": [{ "name": "iso-plaza", "source": "./" }]
+}

@@ -1,0 +1,96 @@
+{
+  "grid": { "cols": 10, "rows": 10, "tileWidth": 64, "tileHeight": 32 },
+  "walk": { "msPerTile": 340 },
+  "characterScale": 1.35,
+  "cameraZoom": 2.2,
+
+  "colors": {
+    "background": "#FBF4EA",
+    "tileA": "#F3E4C9",
+    "tileB": "#EBD7B6",
+    "tileLine": "#E0C9A3",
+    "groundSide": "#D9BE95",
+    "text": "#6B4E3D",
+    "label": "#FFFFFF"
+  },
+
+  "tile": { "sprite": null },
+
+  "buildings": {
+    "studio": {
+      "label": "工作室",
+      "from": [0, 3], "to": [1, 5],
+      "height": 62, "roofHeight": 30,
+      "door": "right",
+      "wall": "#F6CDA8", "wallShade": "#E8B48A", "roof": "#D9876A",
+      "sprite": null
+    },
+    "library": {
+      "label": "圖書館",
+      "from": [3, 0], "to": [5, 1],
+      "height": 72, "roofHeight": 28,
+      "door": "left",
+      "wall": "#CFE3C6", "wallShade": "#B3D0A8", "roof": "#7FA88A",
+      "sprite": null
+    }
+  },
+
+  "decorations": [
+    { "type": "fountain", "from": [4, 4], "to": [5, 5], "blocking": true, "sprite": null },
+    { "type": "bench", "tile": [8, 7], "blocking": false, "sprite": null },
+    { "type": "tree", "tile": [9, 7], "blocking": true, "sprite": null },
+    { "type": "tree", "tile": [9, 4], "blocking": true, "sprite": null },
+    { "type": "tree", "tile": [0, 9], "blocking": true, "sprite": null },
+    { "type": "flower", "tile": [7, 9], "blocking": false, "sprite": null },
+    { "type": "flower", "tile": [2, 1], "blocking": false, "sprite": null }
+  ],
+
+  "spots": {
+    "typing": [2, 4],
+    "bashing": [3, 6],
+    "reading": [4, 2],
+    "resting": [8, 7],
+    "start": [6, 6]
+  },
+  "wanderTiles": [[3, 3], [7, 3], [6, 7], [3, 8], [7, 5], [2, 7], [6, 2], [8, 4]],
+  "restChance": 0.3,
+
+  "toolStates": {
+    "Write": "typing",
+    "Edit": "typing",
+    "MultiEdit": "typing",
+    "NotebookEdit": "typing",
+    "Read": "reading",
+    "Grep": "reading",
+    "Glob": "reading",
+    "WebFetch": "reading",
+    "WebSearch": "reading",
+    "Bash": "bashing",
+    "PowerShell": "bashing",
+    "AskUserQuestion": "waiting",
+    "ExitPlanMode": "waiting",
+    "Agent": "thinking",
+    "Task": "thinking"
+  },
+  "defaultToolState": "typing",
+
+  "characters": {
+    "claude": {
+      "color": "#E08A5F",
+      "states": {
+        "idle": {
+          "file": "characters/claude-idle.svg",
+          "frames": 2, "frameWidth": 48, "frameHeight": 64, "fps": 2,
+          "anchor": [24, 60]
+        },
+        "walk": null,
+        "resting": null,
+        "thinking": null,
+        "typing": null,
+        "reading": null,
+        "bashing": null,
+        "waiting": null
+      }
+    }
+  }
+}

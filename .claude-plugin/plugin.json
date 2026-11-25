@@ -1,0 +1,6 @@
+{
+  "name": "iso-plaza",
+  "version": "0.1.0",
+  "description": "等角小廣場面板：Claude 工作時的小角色會在廣場上走動，點名牌看工作回報",
+  "types": "./types/index.d.ts"
+}
